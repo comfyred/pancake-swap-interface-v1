@@ -27,40 +27,8 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xe9e7cea3dedca5984780bafc599bd69add087d56.png"
     },
     {
-      "name": "Ethereum Token",
-      "symbol": "ETH",
-      "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x2170ed0880ac9a755fd29b2688956bd959f933f8.png"
-    },
-    {
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "address": "0x55d398326f99059ff775485246999027b3197955",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x55d398326f99059ff775485246999027b3197955.png"
-    },
-    {
-      "name": "Litecoin Token",
-      "symbol": "LTC",
-      "address": "0x4338665cbb7b2485a8855a139b75d5e34ab0db94",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x4338665cbb7b2485a8855a139b75d5e34ab0db94.png"
-    },
-    {
-      "name": "Dai Token",
-      "symbol": "DAI",
-      "address": "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3.png"
-    },
-    {
       "name": "Comfy Token",
-      "symbol": "Comfy",
+      "symbol": "COMFY",
       "address": "0xc737b44cb0aa18815a1f6918eb338dee7e7e6bd7",
       "chainId": 56,
       "decimals": 9,

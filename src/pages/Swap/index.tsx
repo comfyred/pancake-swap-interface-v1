@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI, Token, Trade } from '@pancakeswap-libs/sdk'
+import { Currency, CurrencyAmount, JSBI, Token, Trade } from '@pancakeswap-libs/sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
 import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@pancakeswap-libs/uikit'
@@ -18,6 +18,7 @@ import TokenWarningModal from 'components/TokenWarningModal'
 import SyrupWarningModal from 'components/SyrupWarningModal'
 import SafeMoonWarningModal from 'components/SafeMoonWarningModal'
 import ProgressSteps from 'components/ProgressSteps'
+import { WrappedTokenInfo } from 'state/lists/hooks'
 
 import { INITIAL_ALLOWED_SLIPPAGE } from 'constants/index'
 import { useActiveWeb3React } from 'hooks'
@@ -40,7 +41,6 @@ import AppBody from '../AppBody'
 const Swap = () => {
   const loadedUrlParams = useDefaultsFromURLSearch()
   const TranslateString = useI18n()
-
   // token warning stuff
   const [loadedInputCurrency, loadedOutputCurrency] = [
     useCurrency(loadedUrlParams?.inputCurrencyId),
@@ -261,6 +261,7 @@ const Swap = () => {
 
   const handleOutputSelect = useCallback(
     (outputCurrency) => {
+      // console.log(outputCurrency)
       onCurrencySelection(Field.OUTPUT, outputCurrency)
       if (outputCurrency.symbol === 'SYRUP') {
         checkForWarning(outputCurrency.symbol, 'Buying')
@@ -271,6 +272,21 @@ const Swap = () => {
     },
     [onCurrencySelection, checkForWarning]
   )
+
+
+  useEffect(() => {
+
+    if (!currencies.OUTPUT) {
+      handleOutputSelect(new WrappedTokenInfo({
+            "name": "Comfy Token",
+            "symbol": "COMFY",
+            "address": "0xc737b44cb0aa18815a1f6918eb338dee7e7e6bd7",
+            "chainId": 56,
+            "decimals": 9,
+            "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xc737b44cb0aa18815a1f6918eb338dee7e7e6bd7.png"
+      }, []))
+    }
+  }, [currencies.OUTPUT, handleOutputSelect])
 
   return (
     <>
@@ -302,8 +318,8 @@ const Swap = () => {
             onDismiss={handleConfirmDismiss}
           />
           <PageHeader
-            title={TranslateString(8, 'Exchange')}
-            description={TranslateString(1192, 'Trade tokens in an instant')}
+            title={TranslateString(8, 'Swap')}
+            description={TranslateString(1192, 'Swap tokens in an instant! Make sure to set your slippage.')}
           />
           <CardBody>
             <AutoColumn gap="md">
@@ -353,7 +369,7 @@ const Swap = () => {
                     : TranslateString(80, 'To')
                 }
                 showMaxButton={false}
-                currency={currencies[Field.OUTPUT]}
+                currency={currencies[Field.OUTPUT] }
                 onCurrencySelect={handleOutputSelect}
                 otherCurrency={currencies[Field.INPUT]}
                 id="swap-currency-output"

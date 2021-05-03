@@ -113,7 +113,7 @@ export function useDerivedSwapInfo(): {
   inputError?: string
 } {
   const { account } = useActiveWeb3React()
-
+  // console.log(outputCurrencyId)
   const {
     independentField,
     typedValue,
