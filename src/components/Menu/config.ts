@@ -30,6 +30,10 @@ const config: MenuEntry[] = [
         href: 'https://comfytoken.com',
       },
       {
+        label: 'Comfy Calculator',
+        href: 'https://comfytoken.com',
+      },
+      {
         label: 'BSCscan',
         href: 'https://bscscan.com/token/0xc737b44cb0aa18815a1f6918eb338dee7e7e6bd7',
       },
