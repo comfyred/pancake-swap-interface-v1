@@ -44,18 +44,22 @@ html {
 
 body {
   /* height: calc(100vh - 64px); */
+  /* width: 100vw !important; */
+  /* height: 100vh !important; */
+  /* overflow-y:hidden; */
   /* padding-top: 64px !important; */
+}
+
+/* html, */
+div#root {
+  height: 100% !important;
   background: var(--black) !important;
   background-image: url('/images/bg_tokyo.png') !important;
   background-repeat: no-repeat;
   background-size: cover;
   /* background-blend-mode: color-dodge; */
   background-attachment: fixed;
-  backdrop-filter: blur(3.1459px);
-}
-
-div#root {
-  height: 100vh;
+  /* backdrop-filter: blur(3.1459px); */
 }
 
 nav {
@@ -83,8 +87,8 @@ div#comfy-footer {
   align-items: center;
   /* justify-content: center; */
   position: fixed;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   padding: 6px 14px;
   opacity: 0.8;
 }
@@ -106,7 +110,7 @@ div#comfy-footer > a:hover {
   height: 64px;
   width: 100%;
   z-index: 21;
-  position: fixed;
+  position: absolute;
   display: flex;
   padding: 0 2rem;
   align-items: center;
@@ -147,6 +151,7 @@ a.comfy-header-btn > span {
 
 div#root > div:nth-child(2) > div > div > div:nth-child(2) > div {
   /* padding-top: 64px !important; */
+  /* overflow-y: scroll !important; */
   background: none;
 }
 
