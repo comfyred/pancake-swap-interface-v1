@@ -22,109 +22,57 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Farms',
-    icon: 'FarmIcon',
-    href: 'https://pancakeswap.finance/farms',
-  },
-  {
-    label: 'Pools',
-    icon: 'PoolIcon',
-    href: 'https://pancakeswap.finance/pools',
-  },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://pancakeswap.finance/lottery',
-    status: {
-      text: 'WIN',
-      color: 'warning',
-    },
-  },
-  {
-    label: 'Collectibles',
-    icon: 'NftIcon',
-    href: 'https://pancakeswap.finance/nft',
-  },
-  {
-    label: 'Team Battle',
-    icon: 'TeamBattleIcon',
-    href: 'https://pancakeswap.finance/competition',
-  },
-  {
-    label: 'Teams & Profile',
-    icon: 'GroupsIcon',
-    items: [
-      {
-        label: 'Leaderboard',
-        href: 'https://pancakeswap.finance/teams',
-      },
-      {
-        label: 'Task Center',
-        href: 'https://pancakeswap.finance/profile/tasks',
-      },
-      {
-        label: 'Your Profile',
-        href: 'https://pancakeswap.finance/profile',
-      },
-    ],
-  },
-  {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
       {
-        label: 'Overview',
-        href: 'https://pancakeswap.info',
+        label: 'Website',
+        href: 'https://comfytoken.com',
       },
       {
-        label: 'Tokens',
-        href: 'https://pancakeswap.info/tokens',
+        label: 'BSCscan',
+        href: 'https://bscscan.com/token/0xc737b44cb0aa18815a1f6918eb338dee7e7e6bd7',
       },
       {
-        label: 'Pairs',
-        href: 'https://pancakeswap.info/pairs',
+        label: 'Discord',
+        href: 'https://discord.gg/comfytoken',
       },
       {
-        label: 'Accounts',
-        href: 'https://pancakeswap.info/accounts',
+        label: 'Telegram',
+        href: 'https://t.me/comfytokenchat',
       },
     ],
   },
-  {
-    label: 'IFO',
-    icon: 'IfoIcon',
-    href: 'https://pancakeswap.finance/ifo',
-  },
-  {
-    label: 'More',
-    icon: 'MoreIcon',
-    items: [
-      {
-        label: 'Contact',
-        href: 'https://docs.pancakeswap.finance/contact-us',
-      },
-      {
-        label: 'Voting',
-        href: 'https://voting.pancakeswap.finance',
-      },
-      {
-        label: 'Github',
-        href: 'https://github.com/pancakeswap',
-      },
-      {
-        label: 'Docs',
-        href: 'https://docs.pancakeswap.finance',
-      },
-      {
-        label: 'Blog',
-        href: 'https://pancakeswap.medium.com',
-      },
-      {
-        label: 'Merch',
-        href: 'https://pancakeswap.creator-spring.com/',
-      },
-    ],
-  },
+  // {
+  //   label: 'More',
+  //   icon: 'MoreIcon',
+  //   items: [
+  //     {
+  //       label: 'Contact',
+  //       href: 'https://docs.pancakeswap.finance/contact-us',
+  //     },
+  //     {
+  //       label: 'Voting',
+  //       href: 'https://voting.pancakeswap.finance',
+  //     },
+  //     {
+  //       label: 'Github',
+  //       href: 'https://github.com/pancakeswap',
+  //     },
+  //     {
+  //       label: 'Docs',
+  //       href: 'https://docs.pancakeswap.finance',
+  //     },
+  //     {
+  //       label: 'Blog',
+  //       href: 'https://pancakeswap.medium.com',
+  //     },
+  //     {
+  //       label: 'Merch',
+  //       href: 'https://pancakeswap.creator-spring.com/',
+  //     },
+  //   ],
+  // },
 ]
 
 export default config

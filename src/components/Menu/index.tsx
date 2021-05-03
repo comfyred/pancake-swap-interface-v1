@@ -16,7 +16,7 @@ const Menu: React.FC = (props) => {
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
   const priceData = useGetPriceData()
-  const cakePriceUsd = priceData ? Number(priceData.data[CAKE.address].price) : undefined
+  const cakePriceUsd = priceData ? Number(priceData.data["0xf09b7B6bA6dAb7CccC3AE477a174b164c39f4C66"].price) : undefined
   const profile = useGetLocalProfile()
 
   return (
@@ -28,10 +28,9 @@ const Menu: React.FC = (props) => {
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={selectedLanguage?.code || ''}
-      langs={allLanguages}
+      langs={[{ code: 'en', language: 'English' }]}
       setLang={setSelectedLanguage}
-      cakePriceUsd={cakePriceUsd}
-      profile={profile}
+      // profile={profile}
       {...props}
     />
   )

@@ -122,7 +122,7 @@ export default function App() {
     localStorage.setItem(CACHE_KEY, langObject.code)
   }
 
-  useGetDocumentTitlePrice()
+  // useGetDocumentTitlePrice()
 
   return (
     <Suspense fallback={null}>
