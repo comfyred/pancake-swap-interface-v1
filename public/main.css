@@ -14,6 +14,16 @@ white: '#fff8e9', */
   --white: #fff8e9';
 }
 
+body {
+  background: var(--black) !important;
+  background-image: url('/images/bg_tokyo.png') !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-blend-mode: color-dodge; */
+  background-attachment: fixed;
+  backdrop-filter: blur(3.1459px);
+}
+
 nav {
   background-color: rgba(12,0,29, 0.8) !important;
 }
@@ -25,4 +35,67 @@ nav > div > a {
 /* //*[@id="root"]/div[2]/div/div/div[1]/div[2] */
 div#root > div:nth-child(2) > div > div > div > div:nth-child(2) {
   display: none !important;
+}
+
+div#comfy-wrapper {
+  pointer-events: none;
+}
+
+#comfy-header {
+  pointer-events: none;
+  height: 64px;
+  width: 100%;
+  z-index: 21;
+  position: fixed;
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+a.comfy-header-btn {
+  pointer-events: all;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 1rem;
+  background-color: transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: #fff8e9;
+}
+
+a.comfy-header-btn:hover {
+  color: var(--primary);
+}
+
+a.comfy-header-btn > img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+a.comfy-header-btn > span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* //*[@id="root"]/div[2]/div/div/div[2]/div */
+
+div#root > div:nth-child(2) > div > div > div:nth-child(2) > div {
+  background: none;
+}
+
+/* //*[@id="root"]/div[2]/div/div/div[2]/div/div[4] */
+/* //*[@id="root"]/div[2]/div/div/div[1] */
+div#root > div:nth-child(2) > div > div > div:nth-child(1),
+div#root > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(4) {
+  background-color: rgba(12,0,29, 0.8) !important;
+}
+
+/* //*[@id="root"]/div[2]/div/div/div[2]/div/div[5]/div/div */
+div#root > div:nth-child(2) > div > div > div:nth-child(2) > div > div:nth-child(5) > div > div {
+  background-color: rgba(12,0,29, 0.8) !important;
 }

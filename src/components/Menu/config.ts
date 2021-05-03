@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://pancakeswap.finance/',
+    href: 'https://comfyswap.com',
   },
   {
     label: 'Trade',
@@ -26,7 +26,7 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     items: [
       {
-        label: 'Website',
+        label: 'ComfyToken Website',
         href: 'https://comfytoken.com',
       },
       {
