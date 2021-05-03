@@ -48,11 +48,6 @@ body {
   /* height: 100vh !important; */
   /* overflow-y:hidden; */
   /* padding-top: 64px !important; */
-}
-
-/* html, */
-div#root {
-  height: 100% !important;
   background: var(--black) !important;
   background-image: url('/images/bg_tokyo.png') !important;
   background-repeat: no-repeat;
@@ -60,6 +55,11 @@ div#root {
   /* background-blend-mode: color-dodge; */
   background-attachment: fixed;
   /* backdrop-filter: blur(3.1459px); */
+}
+
+/* html, */
+div#root {
+  height: 100% !important;
 }
 
 nav {
