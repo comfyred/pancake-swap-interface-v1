@@ -33,6 +33,22 @@
       "chainId": 56,
       "decimals": 9,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xc737b44cb0aa18815a1f6918eb338dee7e7e6bd7.png"
+    },
+    {
+      "name": "Bonfire Token",
+      "symbol": "BONFIRE",
+      "address": "0x5e90253fbae4dab78aa351f4e6fed08a64ab5590",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x5e90253fbae4dab78aa351f4e6fed08a64ab5590.png"
+    },
+    {
+      "name": "Bogged Finance",
+      "symbol": "BOG",
+      "address": "0xD7B729ef857Aa773f47D37088A1181bB3fbF0099",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xD7B729ef857Aa773f47D37088A1181bB3fbF0099.png"
     }
   ]
 }

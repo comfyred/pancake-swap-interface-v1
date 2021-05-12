@@ -50,10 +50,10 @@ body {
   /* padding-top: 64px !important; */
   background: var(--black) !important;
   background-image: url('/images/bg_tokyo.png') !important;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   /* background-blend-mode: color-dodge; */
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   /* backdrop-filter: blur(3.1459px); */
 }
 
