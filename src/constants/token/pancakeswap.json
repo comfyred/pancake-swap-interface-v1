@@ -1,5 +1,5 @@
 {
-  "name": "PancakeSwap Default List",
+  "name": "ComfySwap Default List",
   "timestamp": "2021-03-17T09:56:23Z",
   "version": {
     "major": 2,
@@ -43,12 +43,20 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x5e90253fbae4dab78aa351f4e6fed08a64ab5590.png"
     },
     {
-      "name": "Bogged Finance",
+      "name": "Bogged Finance (OLD)",
       "symbol": "BOG",
       "address": "0xD7B729ef857Aa773f47D37088A1181bB3fbF0099",
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xD7B729ef857Aa773f47D37088A1181bB3fbF0099.png"
+    },
+    {
+      "name": "VTube Token",
+      "symbol": "VTUBE",
+      "address": "0x25dfE3386525465802AF6Bfe499ded48017155ad",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/9745.png"
     }
   ]
 }
