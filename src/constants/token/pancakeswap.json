@@ -43,14 +43,6 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x5e90253fbae4dab78aa351f4e6fed08a64ab5590.png"
     },
     {
-      "name": "Bogged Finance (OLD)",
-      "symbol": "BOG (OLD)",
-      "address": "0xD7B729ef857Aa773f47D37088A1181bB3fbF0099",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xD7B729ef857Aa773f47D37088A1181bB3fbF0099.png"
-    },
-    {
       "name": "VTube Token",
       "symbol": "VTUBE",
       "address": "0x25dfE3386525465802AF6Bfe499ded48017155ad",
