@@ -57,6 +57,14 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/9745.png"
+    },
+    {
+      "name": "SNOWGE COIN",
+      "symbol": "SNOWGE",
+      "address": "0x5e9280d53f28281ce098c8f64e49f5f5dc9ea185",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/9772.png"
     }
   ]
 }
